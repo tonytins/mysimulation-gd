@@ -8,7 +8,7 @@ My Simulation is a life simulation game inspired by The Sims, built using the Go
 
 ## Installation
 
-1. Download the latest version of Godot from the [official website](https://godotengine.org/download/windows)
+1. Download the latest version of Godot from the [official website](https://godotengine.org/download)
 2. Clone this repository or download the source code
 3. Open Godot and import the project
 4. Click on the "Play" button to start the game
