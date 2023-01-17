@@ -123,7 +123,7 @@ _global_script_class_icons={
 [application]
 
 config/name="My Simulation"
-run/main_scene="res://bt_example/agent.tscn"
+run/main_scene="res://scenes/World.tscn"
 config/icon="res://icon.png"
 
 [autoload]
