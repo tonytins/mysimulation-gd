@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://addons/behavior_tree/src/blackboard.gd" type="Script" id=1]
 [ext_resource path="res://addons/behavior_tree/src/behavior_tree.gd" type="Script" id=2]
 [ext_resource path="res://addons/behavior_tree/src/btnodes/composites/bt_sequence.gd" type="Script" id=3]
+[ext_resource path="res://addons/behavior_tree/src/btnodes/composites/bt_selector.gd" type="Script" id=4]
 
 [node name="Sim" type="Node"]
 
@@ -14,3 +15,6 @@ script = ExtResource( 2 )
 
 [node name="BTSequence" type="Node" parent="BehaviorTree"]
 script = ExtResource( 3 )
+
+[node name="BTSelector" type="Node" parent="BehaviorTree"]
+script = ExtResource( 4 )

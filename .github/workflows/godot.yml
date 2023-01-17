@@ -1,15 +1,14 @@
 name: Build Godot Project
 
 on:
-    push:
-        branches: [main, develop, "releases/**"]
-    pull_request:
-        branches: [main, develop, "releases/**"]
+  push:
+    branches: [main, develop, "releases/**"]
+  pull_request:
+    branches: [main, develop, "releases/**"]
 
 jobs:
   Godot:
     timeout-minutes: 15
-    continue-on-error: true
     runs-on: ubuntu-latest
     strategy:
       matrix:
