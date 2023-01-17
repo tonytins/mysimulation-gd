@@ -1,8 +1,12 @@
 # My Simulation
 
 <p align="center">
+<img src="./docs/imgs/mysim-wordmark.svg">
+<br>
 <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/tonytins/mysimulation/godot.yml"> <img alt="GitHub" src="https://img.shields.io/github/license/tonytins/mysimulation"> <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/w/tonytins/mysimulation">
+<hr>
 </p>
+
 
 My Simulation is a life simulation game inspired by The Sims, built using the Godot game engine. I've always been a huge fan of The Sims and always wanted to create my own life simulation game. I decided to use Godot as the game engine with Kagenashi's behavior tree AI architecture to mimic the one used in The Sims to give the game a similar feel. I don't know how successful I'll be, but we'll see where it goes.
 
