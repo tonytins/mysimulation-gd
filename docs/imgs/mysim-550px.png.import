@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Screenshot 2021-03-13 085615.png-4c550afd66c6d401d2900eb620bd4383.stex"
+path="res://.import/mysim-550px.png-6447cb070b414bbd1707af6ed27db86c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://docs/imgs/Screenshot 2021-03-13 085615.png"
-dest_files=[ "res://.import/Screenshot 2021-03-13 085615.png-4c550afd66c6d401d2900eb620bd4383.stex" ]
+source_file="res://docs/imgs/mysim-550px.png"
+dest_files=[ "res://.import/mysim-550px.png-6447cb070b414bbd1707af6ed27db86c.stex" ]
 
 [params]
 

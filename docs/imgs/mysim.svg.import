@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/My Simulation - Inverted.svg-7d43adf38570f4e8f353aef65eea736b.stex"
+path="res://.import/mysim.svg-9832535e896c2d080fae924be487b14d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/My Simulation - Inverted.svg"
-dest_files=[ "res://.import/My Simulation - Inverted.svg-7d43adf38570f4e8f353aef65eea736b.stex" ]
+source_file="res://docs/imgs/mysim.svg"
+dest_files=[ "res://.import/mysim.svg-9832535e896c2d080fae924be487b14d.stex" ]
 
 [params]
 

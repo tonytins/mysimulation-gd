@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/My Simulation - 550px.png-1a09a595ed0ae13be25e766db2f8b2e0.stex"
+path="res://.import/graph-paper.svg-493b506f16f259ea880396a0369d020c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/My Simulation - 550px.png"
-dest_files=[ "res://.import/My Simulation - 550px.png-1a09a595ed0ae13be25e766db2f8b2e0.stex" ]
+source_file="res://docs/imgs/graph-paper.svg"
+dest_files=[ "res://.import/graph-paper.svg-493b506f16f259ea880396a0369d020c.stex" ]
 
 [params]
 

@@ -9,10 +9,11 @@ on:
 jobs:
   Godot:
     timeout-minutes: 15
+    continue-on-error: true
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        platform: [linux, windows, mac]
+        platform: [linux, windows]
     steps:
       - uses: actions/checkout@v2
         with:

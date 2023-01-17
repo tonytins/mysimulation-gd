@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Sim Tactics - 250px.png-0b3bd266a78d37db5a68da55eb9fcd6b.stex"
+path="res://.import/mysim-Inverted.svg-e807cde6c2bdc14da6beeec3ef355c41.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sim Tactics - 250px.png"
-dest_files=[ "res://.import/Sim Tactics - 250px.png-0b3bd266a78d37db5a68da55eb9fcd6b.stex" ]
+source_file="res://docs/imgs/mysim-Inverted.svg"
+dest_files=[ "res://.import/mysim-Inverted.svg-e807cde6c2bdc14da6beeec3ef355c41.stex" ]
 
 [params]
 

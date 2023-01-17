@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/My Simulation wordmark.svg-90ac507a18d0e389622818475b357c65.stex"
+path="res://.import/mysim-wordmark.svg-cdbc24829b03d60fc605d1af002c028d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/My Simulation wordmark.svg"
-dest_files=[ "res://.import/My Simulation wordmark.svg-90ac507a18d0e389622818475b357c65.stex" ]
+source_file="res://docs/imgs/mysim-wordmark.svg"
+dest_files=[ "res://.import/mysim-wordmark.svg-cdbc24829b03d60fc605d1af002c028d.stex" ]
 
 [params]
 

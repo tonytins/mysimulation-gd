@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Sim Tactics - 550px.png-ea61ad447f03a9ce10234463c8bef364.stex"
+path="res://.import/mysim.png-7adafc055d6032c0957790ffa9f8d565.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sim Tactics - 550px.png"
-dest_files=[ "res://.import/Sim Tactics - 550px.png-ea61ad447f03a9ce10234463c8bef364.stex" ]
+source_file="res://docs/imgs/mysim.png"
+dest_files=[ "res://.import/mysim.png-7adafc055d6032c0957790ffa9f8d565.stex" ]
 
 [params]
 
