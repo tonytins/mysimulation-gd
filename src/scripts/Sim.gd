@@ -1,59 +1,57 @@
-# Mood: an integer value representing the Sim's current mood.
+# current_mood: an integer value representing the Sim's current mood.
 #
-# Needs: a dictionary containing the Sim's need levels for hunger, energy, fun, and social. 
+# needs: a dictionary containing the Sim's need levels for hunger, energy, fun, and social. 
 # Each need has an initial value of 50.
 # Activities: a list of activities that the Sim has performed.
 # 
-# UpdateMood() calculates the average need level for the Sim and updates its mood based on that value.
-# DoActivity() updates the Sim's need levels and appends the activity to the Activities list.
+# update_mood() calculates the average need level for the Sim and updates its mood based on that value.
+# do_activity() updates the Sim's need levels and appends the activity to the Activities list.
 #
 extends KinematicBody2D
 
-var Mood = 0
-var Needs = {
+onready var sprite: Sprite = $TriangleRed
+export var max_speed := 300
+
+var current_mood = 0
+var last_mood = 0
+var needs = {
 	"hunger": 50, "energy": 50, "fun": 50, "social": 50,
 }
-
-
-onready var sprite: Sprite = $TriangleRed
-
-export var max_speed := 300
 var current_global_pos = Vector2.ZERO
 var target_global_pos = Vector2.ZERO
 var _velocity := Vector2.ZERO
 
-# Define the `UpdateMood` instance method.
-func UpdateMood(motive):
+# Define the `update_mood` instance method.
+func update_mood(motive):
 	# Calculate the average need level.
 	var need_sum = 0
-	for need in Needs[motive]:
+	for need in needs[motive]:
 		need_sum += need
-	var need_average = need_sum / len(Needs)
+	var need_average = need_sum / len(needs)
 
 	# Update the Sim's mood based on its average need and relationship levels.
-	Mood = need_average / 2
+	current_mood = need_average / 2
+	last_mood = current_mood
 
 # Define the `DoActivity` instance method, which takes an `motive` and 'amount' argument.
-func DoActivity(motive, amount):
+func do_activity(motive, amount):
 	if motive == "hunger":
-		Needs["hunger"] = amount
+		needs["hunger"] = amount
 	elif motive == "energy":
-		Needs["fun"] = amount
+		needs["fun"] = amount
 	elif motive == "energy":
-		Needs["energy"] = amount
+		needs["energy"] = amount
 	elif motive == "social":
-		Needs["social"] = amount
+		needs["social"] = amount
 	
 	# Update the Sim's mood after performing the `activity`.
-	UpdateMood(motive)
+	update_mood(motive)
 
 # Define the `Sim` class constructor.
 func _ready():
-	# Call the `DoActivity` method on the `Sim` instance and pass in the string "eating" as an argument.
-	DoActivity("hunger", 10)
-
 	# Print the `Sim` instance again.
-	print(Mood)
+	if last_mood != current_mood:
+		print(current_mood)
 	
 func _physics_process(delta):	
 	if Input.is_mouse_button_pressed(BUTTON_LEFT):
@@ -63,6 +61,7 @@ func _physics_process(delta):
 
 func detect_pos():
 	if current_global_pos == target_global_pos:
+
 		_velocity = Vector2.ZERO
 		
 	if current_global_pos != target_global_pos:
