@@ -128,10 +128,6 @@ config/icon="res://icon.png"
 config/macos_native_icon="res://icon.icns"
 config/windows_native_icon="res://icon.ico"
 
-[autoload]
-
-Steering="*res://src/scripts/Steering.gd"
-
 [editor_plugins]
 
 enabled=PoolStringArray( "res://addons/behavior_tree/plugin.cfg" )

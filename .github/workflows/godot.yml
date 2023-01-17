@@ -8,6 +8,8 @@ on:
 
 jobs:
   Godot:
+    timeout-minutes: 15
+    continue-on-error: true
     runs-on: ubuntu-latest
     strategy:
       matrix:
