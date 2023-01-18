@@ -7,8 +7,7 @@
 <hr>
 </p>
 
-
-My Simulation is a life simulation game inspired by The Sims, built using the Godot game engine. I've always been a huge fan of The Sims and always wanted to create my own life simulation game. I decided to use Godot as the game engine with Kagenashi's behavior tree AI architecture to mimic the one used in The Sims to give the game a similar feel. I don't know how successful I'll be, but we'll see where it goes.
+My Simulation is a life simulation game inspired by The Sims, built using the Godot game engine. I've always been a huge fan of the series and always wanted to create my own life simulation game. I decided to use Godot as the game engine with Kagenashi's behavior tree AI architecture to mimic the one used in the game to give the game a similar feel. I don't know how successful I'll be, but we'll see where it goes.
 
 ## Installation
 
@@ -23,7 +22,7 @@ I would love for others to contribute to this project and make it even better. I
 
 ## Disclaimer
 
-Please note that this game is still in development and may contain bugs. Also, this is not an official Sims game and is not affiliated with Electronic Arts.
+Please note that this game is still in development and may contain bugs. My Simulation is a _big_ project that I'll be working on when I can. Also, this is not an official Sims game and is not affiliated with Electronic Arts.
 
 ## License
 

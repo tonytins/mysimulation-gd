@@ -1,45 +1,11 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://addons/behavior_tree/src/blackboard.gd" type="Script" id=1]
-[ext_resource path="res://addons/behavior_tree/src/behavior_tree.gd" type="Script" id=2]
-[ext_resource path="res://addons/behavior_tree/src/btnodes/composites/bt_sequence.gd" type="Script" id=3]
-[ext_resource path="res://addons/behavior_tree/src/btnodes/composites/bt_selector.gd" type="Script" id=4]
-[ext_resource path="res://addons/behavior_tree/src/btnodes/decorators/bt_conditional.gd" type="Script" id=5]
-[ext_resource path="res://addons/behavior_tree/src/btnodes/decorators/bt_always.gd" type="Script" id=6]
-[ext_resource path="res://addons/behavior_tree/src/btnodes/decorators/bt_repeat_until.gd" type="Script" id=7]
-[ext_resource path="res://addons/behavior_tree/src/btnodes/bt_leaf.gd" type="Script" id=8]
+[ext_resource path="res://scenes/SimBehav.tscn" type="PackedScene" id=2]
 
 [node name="Sim" type="Node"]
 
 [node name="Blackboard" type="Node" parent="."]
 script = ExtResource( 1 )
 
-[node name="BehaviorTree" type="Node" parent="."]
-script = ExtResource( 2 )
-
-[node name="BTSequence" type="Node" parent="BehaviorTree"]
-script = ExtResource( 3 )
-
-[node name="BTAlways" type="Node" parent="BehaviorTree/BTSequence"]
-script = ExtResource( 6 )
-
-[node name="BTLeaf" type="Node" parent="BehaviorTree/BTSequence/BTAlways"]
-script = ExtResource( 8 )
-
-[node name="BTSelector" type="Node" parent="BehaviorTree"]
-script = ExtResource( 4 )
-
-[node name="BTConditional" type="Node" parent="BehaviorTree/BTSelector"]
-script = ExtResource( 5 )
-
-[node name="BTSequence" type="Node" parent="BehaviorTree/BTSelector/BTConditional"]
-script = ExtResource( 3 )
-
-[node name="BTRepeatUntil" type="Node" parent="BehaviorTree/BTSelector/BTConditional/BTSequence"]
-script = ExtResource( 7 )
-
-[node name="BTLeaf" type="Node" parent="BehaviorTree/BTSelector/BTConditional/BTSequence/BTRepeatUntil"]
-script = ExtResource( 8 )
-
-[node name="BTLeaf" type="Node" parent="BehaviorTree/BTSelector/BTConditional/BTSequence"]
-script = ExtResource( 8 )
+[node name="BehaviorTree" parent="." instance=ExtResource( 2 )]

@@ -53,26 +53,26 @@ func _ready():
 	if last_mood != current_mood:
 		print(current_mood)
 	
-func _physics_process(delta):	
-	if Input.is_mouse_button_pressed(BUTTON_LEFT):
-		target_global_pos = get_global_mouse_position()
-		
-	detect_pos()
-
-func detect_pos():
-	if current_global_pos == target_global_pos:
-
-		_velocity = Vector2.ZERO
-		
-	if current_global_pos != target_global_pos:
-		_velocity = Steering.follow(
-			_velocity,
-			global_position,
-			target_global_pos,
-			max_speed
-		)
-
-		_velocity = move_and_slide(_velocity)
+#func _physics_process(delta):	
+#	if Input.is_mouse_button_pressed(BUTTON_LEFT):
+#		target_global_pos = get_global_mouse_position()
+#
+#	detect_pos()
+#
+#func detect_pos():
+#	if current_global_pos == target_global_pos:
+#
+#		_velocity = Vector2.ZERO
+#
+#	if current_global_pos != target_global_pos:
+#		_velocity = Steering.follow(
+#			_velocity,
+#			global_position,
+#			target_global_pos,
+#			max_speed
+#		)
+#
+#		_velocity = move_and_slide(_velocity)
 
 #func _physics_process(delta) -> void:
 #	var target_global_pos: Vector2 = get_global_mouse_position()
